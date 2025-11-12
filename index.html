@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – Muhammad Arslan</title>
+
+    <!-- Bootstrap & Plugins -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Open+Sans&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="header" class="content-block text-center">
+      <div id="overlay-1">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">Developer</a>
+
+            <button
+              class="navbar-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navMenu"
+            >
+              <i class="fa fa-bars fa-2x"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="nav navbar-nav ms-auto">
+                <li><a href="#header"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#testimonials"><i class="fa fa-thumbs-up"></i> Testimonials</a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="intro-text">
+          <h1 class="pro-name">Web Developer</h1>
+          <p class="tagline">Bringing your ideas to life</p>
+          <a href="#contact" class="btn btn-lg btn-success">Hire Me</a>
+        </div>
+
+        <a href="#portfolio" class="scroll-down">
+          <i class="fa fa-angle-down fa-3x pulse"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section id="portfolio" class="content-block text-center">
+      <header class="block-heading">
+        <h1>Latest Works</h1>
+      </header>
+
+      <div class="portfolio-items row">
+        <!-- Example Project -->
+        <div class="col-sm-6 col-md-4 mb-4">
+          <div class="portfolio-item effect-zoe">
+            <img src="img/work1.jpg" class="img-fluid" alt="Project 1" />
+            <figcaption>
+              <h2>Creative <span>Joe</span></h2>
+              <div class="icon-links">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+
+        <!-- You can repeat this block for more projects -->
+      </div>
+
+      <a href="#" class="btn btn-outline-secondary mt-3">
+        <i class="fa fa-eye"></i> View All
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="content-block text-center">
+      <header class="block-heading">
+        <h1>More About Me</h1>
+        <p>A passionate web developer focused on creativity and performance.</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Completed Projects</h4>
+            <h2>20</h2>
+          </div>
+          <div class="col-sm-4">
+            <h4>Ongoing Projects</h4>
+            <h2>9</h2>
+          </div>
+          <div class="col-sm-4">
+            <h4>Top Rated Projects</h4>
+            <h2>15</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="content-block text-center">
+      <header class="block-heading">
+        <h1>What Clients Say</h1>
+      </header>
+
+      <div class="container">
+        <div class="owl-carousel">
+          <div class="testimonial">
+            <img src="img/testimonial_31-190x190.jpg" alt="Client 1" />
+            <p>Working with Arslan was an amazing experience!</p>
+            <strong>John Doe</strong><br />
+            <span>Head of Ideas, Technext</span>
+          </div>
+
+          <div class="testimonial">
+            <img src="img/testimonial_11-190x190.jpg" alt="Client 2" />
+            <p>Excellent service and creative web solutions!</p>
+            <strong>Jane Doe</strong><br />
+            <span>CEO, Apple Inc.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="content-block">
+      <header class="block-heading text-center">
+        <h1>Contact</h1>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form class="contact-form" action="form.php" method="POST">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                rows="5"
+                name="message"
+                placeholder="Your message..."
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-6">
+            <div class="contact-info">
+              <p><i class="fa fa-map-marker"></i> Vehari, Punjab, Pakistan</p>
+              <p><i class="fa fa-phone"></i> +92 327 554 1708</p>
+              <p><i class="fa fa-envelope-o"></i> fa23-bcs-030@cuivehari.edu.pk</p>
+            </div>
+
+            <ul class="social-box mt-3">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="site-footer" class="text-center py-3">
+      <p>&copy; All rights reserved | Designed by Muhammad Arslan</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      new WOW().init();
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: { 0: { items: 1 }, 600: { items: 1 }, 1000: { items: 1 } },
+        });
+      });
+    </script>
+  </body>
+</html>
