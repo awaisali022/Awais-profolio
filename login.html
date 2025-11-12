@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Muhammad Arslan</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS (working icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Grid Layout -->
+  <div class="container-fluid login_page d-flex align-items-center justify-content-center min-vh-100">
+
+    <!-- Section: Design Block -->
+    <section class="text-center text-lg-start w-100">
+      <div class="container py-4">
+        <div class="row g-0 align-items-center justify-content-center">
+
+          <!-- LEFT: Login Form -->
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="card cascading-right bg-body-tertiary shadow-lg" style="backdrop-filter: blur(30px);">
+              <div class="card-body p-5 text-center">
+                <h2 class="fw-bold mb-5">Login</h2>
+                <form>
+
+                  <!-- Name Fields -->
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="fname" class="form-control" required />
+                        <label class="form-label" for="fname">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="lname" class="form-control" required />
+                        <label class="form-label" for="lname">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" required />
+                    <label class="form-label" for="email">Email address</label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="passwordLogin" class="form-control" required />
+                    <label class="form-label" for="passwordLogin">Password</label>
+                    <div class="form-check mt-2 text-start">
+                      <input type="checkbox" class="form-check-input" id="showPassword">
+                      <label class="form-check-label" for="showPassword">Show Password</label>
+                    </div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">Login</button>
+
+                  <!-- Social Media Login Buttons -->
+                  <div class="text-center">
+                    <p>or login with:</p>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://accounts.google.com/" target="_blank" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </a>
+
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Welcome Section -->
+          <div class="col-lg-5 text-center">
+            <div class="image_container">
+              <img src="assets/profile.jpg" alt="Profile_images" class="img-fluid rounded mb-3" style="max-width:400px;">
+              <h2>Welcome Back!</h2>
+              <p>Login to access your dashboard and manage your projects, skills, and profile easily.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="text-center p-3 text-muted">
+      <h3>@ Muhammad Arslan 2025</h3>
+      <p>designed by Muhammad Arslan</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Show/Hide Password
+    const showPassword = document.getElementById("showPassword");
+    const passwordInput = document.getElementById("passwordLogin");
+    showPassword.addEventListener("change", () => {
+      passwordInput.type = showPassword.checked ? "text" : "password";
+    });
+  </script>
+
+</body>
+
+</html>
